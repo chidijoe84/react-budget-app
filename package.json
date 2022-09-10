@@ -8,6 +8,7 @@
     "express": "^4.15.4",
     "jest": "^20.0.4",
     "moment": "^2.18.1",
+    "numeral": "^2.0.6",
     "react": "^16.13.0",
     "react-addons-shallow-compare": "^15.6.0",
     "react-dates": "^12.7.0",
@@ -26,7 +27,6 @@
     "eject": "react-scripts eject",
     "heroku-postbuild": "npm run build"
   },
-
   "eslintConfig": {
     "extends": [
       "react-app",
