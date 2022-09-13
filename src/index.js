@@ -6,7 +6,7 @@ import configureStore from './store/configureStore';
 import './index.css';
 import 'react-dates/lib/css/_datepicker.css';
 import './firebase/firebase'
-// import { addExpense } from './actions/expenses';
+import { startSetExpenses } from './actions/expenses';
 // import { setTextFilter } from './actions/filters';
 // import getVisibleExpenses from './selectors/expenses';
 
@@ -23,7 +23,13 @@ const jsx = (
   </Provider>
 );
 
-ReactDOM.render(jsx, document.getElementById('root'));
+ReactDOM.render(<p>Loading...</p>, document.getElementById('root'));
+
+store.dispatch(startSetExpenses()).then(()=>{
+  ReactDOM.render(jsx, document.getElementById('root'));
+});
+
+
 
 
 
