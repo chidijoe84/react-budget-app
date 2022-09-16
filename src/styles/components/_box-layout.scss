@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+}
+.box-layout {
+    align-items: center;
+    background: url('~/public/images/bg.jpg');  //url('/./images/background.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    height: 98vh;
+    width: 100%;
+}
+
+.box-layout__box {
+    background: fade-out(white, .15);
+    border-radius: 3px;
+    text-align: center;
+    width: 25rem;
+    padding: $l-size $m-size;
+
+}
+
+.box-layout__title{
+    margin: 0 0 $m-size 0;
+    line-height: 1;
+}
